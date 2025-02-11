@@ -1,1 +1,230 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", "sans-serif";
+  font-size: clamp(5px, 2vh, 48px);
+  color: white;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  cursor: url("assets/flashlight.png"), auto;
+}
 
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("assets/table-top.jpg"); /* Ensure path is correct */
+  background-size: cover; /* Ensures full-page coverage */
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(110%) blur(3px);
+  z-index: -200; /* Push it further behind */
+}
+
+.parallax-container {
+  position: fixed; /* Ensures it does not push content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none; /* Allows clicks to pass through */
+  z-index: -1; /* Keeps it behind everything */
+  top: -20px;
+  margin: 0 10vw;
+  padding: 0;
+  top: 0;
+}
+
+.nav-bg {
+  z-index: 100;
+  display: hide;
+}
+
+.parallax-item {
+  position: absolute;
+  height: 40vh;
+  top: 50%;
+  transform: translateY(
+    -50%
+  ); /* Centers items without affecting document height */
+  filter: brightness(70%);
+}
+
+#item1 {
+  transform: rotate(50deg);
+  left: 20vw;
+  top: -20vw;
+}
+#item2 {
+  transform: rotate(20deg);
+  left: 0w;
+  top: -20vw;
+}
+#item3 {
+  transform: rotate(80deg);
+  left: 40vw;
+  top: -20vw;
+}
+#item4 {
+  transform: rotate(90deg);
+  left: 30vw;
+  top: -20vw;
+}
+#item5 {
+  transform: rotate(100deg);
+  left: 0vw;
+  top: -20vw;
+}
+#item6 {
+  transform: rotate(10deg);
+  left: -10vw;
+  top: -20vw;
+}
+#item7 {
+  transform: rotate(90deg);
+  left: 50vw;
+  top: -20vw;
+}
+#item8 {
+  transform: rotate(60deg);
+  left: -40vh;
+  top: -60vw;
+  height: 150vh;
+}
+
+.scroll-icon {
+  position: fixed;
+  top: 25px;
+  left: 20px;
+  width: 100px;
+  transform: translateX(0);
+  transform: rotate(180deg);
+  z-index: 1000;
+  filter: brightness(50%);
+}
+
+.spotlight {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 50%;
+  border: solid white;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  filter: blur(100px);
+}
+button {
+  border: none;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.vh-wrapper {
+  height: 100vh;
+  width: clamp(50vw, 90vh, 80vw);
+  top: -20px;
+  margin: 0 10vw;
+  padding: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-text {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  padding: 5vh;
+}
+h1,
+h2,
+p {
+  text-align: center;
+}
+
+.trigger-highlight {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.trigger-highlight:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.centered-image-overlay {
+  display: flex;
+  position: fixed;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  z-index: -100;
+}
+
+#white-arrow {
+  position: fixed;
+  top: -100vh;
+  transform: rotate(90deg);
+  filter: opacity(50%) blur(2px);
+  transition: transform 0.5s ease-in-out;
+  visibility: hidden;
+}
+
+.navbar {
+  position: fixed;
+  width: 100vw;
+  top: 0px; /* Initially hidden */
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  background-size: calc(100% + 100px) auto;
+  /*background-image: url("assets/map2.png");*/
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+  color: white;
+  background: linear-gradient(to bottom, black, transparent);
+}
+
+.navbar-button:hover {
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  color: white;
+  filter: blur(0px);
+}
+
+.navbar-button {
+  padding: 15px 35px;
+  margin-right: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  filter: blur(0.01px);
+}
+
+#spotlight {
+  position: fixed;
+  opacity: 1;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.parallax-item.tilt {
+  transform: translateX(-100px);
+}
