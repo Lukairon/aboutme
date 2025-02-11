@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -8,7 +11,84 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    About Kai :)
+    <div class="background">
+      <div class="parallax-container">
+        <img src="assets/postcard1.png" class="parallax-item" id="item1">
+        <img src="assets/postcard2.png" class="parallax-item" id="item2">
+        <img src="assets/postcard3.png" class="parallax-item" id="item3">
+        <img src="assets/postcard4.png" class="parallax-item" id="item4">
+        <img src="assets/postcard5.png" class="parallax-item" id="item5">
+        <img src="assets/postcard6.png" class="parallax-item" id="item6">
+        <img src="assets/postcard7.png" class="parallax-item" id="item7">
+        <img src="assets/typewriter.png" class="parallax-item" id="item8">
+      </div>
+    </div>
+    </div>
+    <div class="centered-image-overlay">
+      <img src="assets/white-arrow.png" id="white-arrow">
+    </div>
+    <nav class="navbar justify-between text-light w-full">
+      <!--<img src="assets/map2.png" class="nav-bg">-->
+      <button class="navbar-button" id="button1">Explore</a>
+      <button class="navbar-button" id="button2">Overview</a>
+      <button class="navbar-button" id="button3">Skills</a>
+      <button class="navbar-button" id="button4">Projects</a>
+      <button class="navbar-button" id="button5">Passions</a>
+    </nav>
+    <!--<img src="assets/map-pin.png" class="scroll-icon" id="scroll-icon">-->
+    <div class="content">
+      <div class="vh-wrapper" id="content1">
+        <div class="main-text">
+          <h1>Welcome to my About Me page!</h1>
+          <h2>Travel to the each section by hovering over the top <span class="trigger-highlight" id="navbar-highlight-text">navigation bar</span> or <span class="trigger-highlight" id="scroll-highlight-text">scrolling</span>.</h2>
+          <h2>Move your cursor to <span class="trigger-highlight" id="torch-highlight-text">illuminate</span> the cabin desk.</h2>
+          <h2>Hold on tight though, the ship is <span class="trigger-highlight" id="tilt-highlight-text">tilting</span>.</h2>
+        </div>
+      </div>
+      <div class="vh-wrapper" id="content2">
+        <div class="main-text">
+          <h1>Hi, I'm Kai.</h1>
+          <h2>I'm a first year computer science major at UNSW.</h2>
+          <h2>I'm a passionate programmer and would love to join the DevSoc trainee program!</h2>
+        </div>
+      </div>
+      <div class="vh-wrapper" id="content3">
+        <div class="main-text">
+          <h1>I can program in...</h1>
+          <h2>C, Python, JavaScript, HTML, CSS, R, SQL and (from a while ago) Lua.</h2>
+          <h1>I also have experience using...</h2>
+          <h2>Blender3D, Excel/Google Sheets, and RDBMS Microsoft Access.</h2>
+        </div>
+      </div>
+      <div class="vh-wrapper" id="content4">
+        <div class="main-text">
+          <h1>Some of my projects include...</h1>
+          <h2>A go-fish simulator</h2>
+          <p>where you can play against a bot or your friends in a game of go-fish!</p>
+          <h2>A tower-defense game</h2>
+          <p>as a 3D modeller and game designer. The game was recognised as a finalist in the 2022 Australian Video Games Competition.</p>
+          <h2>Data analysis of a car sales company</h2>
+          <p>as a part of the UNSW data science work experience hosted by UDASH.</p>
+          <h2>A pizzeria logbook</h2>
+          <p>as the final project in UNSW's High School Computing Advanced course.</p>
+          <h2>Terminal based game, Slide</h2>
+          <p>as the final project in UNSW's High School Computing Fundamentals course.</p>
+          <h2>An assessment log</h2>
+          <p>utilising both Excel and R to analyse and predict my high school grades.</p>
+        </div>
+      </div>
+      <div class="vh-wrapper" id="content5">
+        <div class="main-text">
+          <h1>Other than programming, my passions include...</h1>
+          <h2>badminton</h2>
+          <h2>bouldering</h2>
+          <h2>saxophone</h2>
+          <h2>3D modelling</h2>
+          <h2>film and TV</h2>
+        </div>
+      </div>
+    </div>
+    <div id="spotlight"></div>
     <script src="index.js"></script>
   </body>
 </html>
