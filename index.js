@@ -1,7 +1,7 @@
 // Credits (use cases are indicated above functions)
-// David Lange @ https://blog.finiam.com/blog/spotlight-effect-with-js-and-css
-// freecodecamp.org
-// VineetKumar02's Parallax-Website @ https://github.com/VineetKumar02/Parallax-Website
+    // David Lange @ https://blog.finiam.com/blog/spotlight-effect-with-js-and-css
+    // freecodecamp.org
+    // VineetKumar02's Parallax-Website @ https://github.com/VineetKumar02/Parallax-Website
 // --------------------------------------------------------------
 // Allow DOM content to load before everything
 document.addEventListener('DOMContentLoaded', () => {
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         spotlightEl.style.opacity = `1`;
     });
     // --------------------------------------------------------------
-    // Tilt ship on hover over "tilt" highlight - asynchronous functions supported by freecodecamp.org
+    // Tilt ship on hover over "tilt" highlight - asynchronous functions helped by freecodecamp.org
     let isScrolling = false;
     tiltHighlightText.addEventListener("mouseenter", async () => {
         if (isScrolling) return;
